@@ -3,6 +3,11 @@
 ************************************************/
 :root {
   --theme-color: #01b2ee;
+  --sec-color: #4f5864;
+}
+
+body {
+  color: var(--sec-color);
 }
 
 .app-container {
@@ -63,12 +68,12 @@
   stroke: white;
 }
 
-.navbar-collapse button,
-.navbar-collapse span {
+.navbar-collapse2 button,
+.navbar-collapse2 span {
   color: white;
 }
 
-.navbar-collapse ul li {
+.navbar-collapse2 ul li {
   margin-left: 13px;
 }
 
@@ -185,7 +190,69 @@
 .has-submenu:hover .submenu-arrow-icon {
   right: 5px;
 }
-/* ============ desktop view ============ */
+
+/************** nav 3 ******************/
+.nav-3 {
+  display: none;
+  background: whitesmoke;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding-top: 7px;
+  border-top: 1px solid rgba(179, 195, 211, 0.356);
+}
+
+.nav3-container {
+  display: flex;
+  justify-content: space-around;
+}
+.nav3-container .ico {
+  font-size: 26px;
+}
+
+.nav3-container div {
+  text-align: center;
+}
+
+.nav3-container div:hover {
+  cursor: pointer;
+  color: var(--theme-color);
+}
+/***********************************************
+******************** home *********************
+************************************************/
+
+/*********** hero img **************/
+
+.hero-container {
+  text-align: center;
+  margin: 16px 0px;
+}
+
+.hero-img {
+  height: 26vh;
+  margin: 15px 0;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-container p {
+  color: var(--sec-color);
+  font-size: 0.95rem;
+}
+
+/***********************************************
+******************* footer ********************
+************************************************/
+
+/***********************************************
+******************* media queries ********************
+************************************************/
+
 @media all and (min-width: 992px) {
   .dropdown-menu .dropdown-toggle::after {
     border-top: 0.3em solid transparent;
@@ -207,10 +274,30 @@
   }
 }
 
-/***********************************************
-******************** home *********************
-************************************************/
+@media only screen and (max-width: 1200px) {
+  .nav-2 {
+    visibility: hidden;
+  }
+  .hero-container {
+    margin-top: -60px;
+  }
 
-/***********************************************
-******************* footer ********************
-************************************************/
+  .nav-1 .navbar-nav .nav-item:not(:first-child) {
+    display: none;
+  }
+
+  .nav-1 .navbar-nav .dropdown-menu {
+    font-size: 10px;
+    min-width: 1rem !important;
+    height: 200px;
+    overflow-y: scroll;
+  }
+
+  .nav-1 .navbar-brand {
+    align-self: flex-start;
+  }
+
+  .nav-3 {
+    display: block;
+  }
+}

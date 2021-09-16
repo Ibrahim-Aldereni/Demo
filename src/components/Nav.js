@@ -7,6 +7,9 @@ import {
   IoPersonOutline,
   FaRegEnvelope,
   RiArrowRightSLine,
+  FiHome,
+  FiSearch,
+  AiOutlineAppstore,
 } from "react-icons/all";
 
 class Nav extends Component {
@@ -27,7 +30,7 @@ class Nav extends Component {
                 ></path>
               </svg>
             </a>
-            <button
+            {/* <button
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -37,8 +40,8 @@ class Nav extends Component {
               aria-label="Toggle navigation"
             >
               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
+            </button> */}
+            <div className="navbar-collapse2" id="navbarText">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <div class="dropdown">
@@ -174,6 +177,7 @@ class Nav extends Component {
                   </a>
                 </li>
                 <li
+                  class="nav-item"
                   style={{
                     borderLeft: "1px solid #5ad1ff",
                   }}
@@ -282,6 +286,30 @@ class Nav extends Component {
                   aria-label="Search"
                 />
               </form>
+            </div>
+          </div>
+        </nav>
+        <nav className="nav-3">
+          <div className="nav3-container container">
+            <div>
+              <FiHome className="ico" /> <br />
+              <span>Home</span>
+            </div>
+            <div>
+              <FiSearch className="ico" /> <br />
+              <span>Search</span>
+            </div>
+            <div>
+              <AiOutlineAppstore className="ico" /> <br />
+              <span>Categories</span>
+            </div>
+            <div>
+              <CgShoppingCart className="ico" /> <br />
+              <span>Cart</span>
+            </div>
+            <div>
+              <IoPersonOutline className="ico" /> <br />
+              <span>Account</span>
             </div>
           </div>
         </nav>
