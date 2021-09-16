@@ -11,24 +11,43 @@ class Home extends Component {
         <div className="first-sec-container">
           <DiscoverList />
           <Card
-            title="ttttt"
-            subtitle1="ssss"
-            subtitle2="gggggg"
-            bought="888"
-            price="$55"
-            oldPrice="$77"
+            title="Two New Zealand Beef Tenderloin..."
+            subtitle1=""
+            subtitle2=""
+            bought="77"
+            price="$180"
+            oldPrice=""
             width="30rem"
-            hoverText="hover texxxxxxx"
+            hoverText="Two Silver Fern Farms New Zealand Export-Quality Beef Tenderloin Eye Fillets (1.8 - 2.2kg per Slab)"
             img="https://main-cdn.grabone.co.nz/goimage/325x225/c1a3dbabdbba0721012652889951780c340c30bd.jpg"
           />
           <CollectionCard
-            title="ttttt"
-            subtitle="ssss"
+            title="Grocery Goodies"
+            subtitle="Multiple deals"
             width="30rem"
-            hoverText="hover texxxxxxx"
-            img="https://main-cdn.grabone.co.nz/goimage/325x225/c1a3dbabdbba0721012652889951780c340c30bd.jpg"
+            hoverText="Grocery Goodies"
+            img="https://mediacdn.grabone.co.nz/asset/07BDTi7qVy"
           />
         </div>
+        <section className="container second-sec-container">
+          <p>Get the best deals delivered direct to your inbox each day</p>
+          <form>
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Enter Email Address"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              className="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Button
+            </button>
+          </form>
+        </section>
       </main>
     );
   }

@@ -7,22 +7,41 @@ class DiscoverList extends Component {
         <ul>
           <li id="dl-firstChild">Discover</li>
           <li>
-            textttttttt <span>125</span>
+            Featured Auckland deals <span>125</span>
           </li>
           <li>
-            textttttttt <span>125</span>
+            Collections <span>125</span>
           </li>
           <li>
-            textttttttt <span>125</span>
+            Escapes <span>125</span>
           </li>
           <li>
-            textttttttt <span>125</span>
+            Picked for You <span>125</span>
           </li>
           <li>
-            textttttttt <span>125</span>
+            Activities, Events & Outdoors
+            <span>125</span>
           </li>
           <li>
-            textttttttt <span>125</span>
+            Store <span>125</span>
+          </li>
+          <li>
+            Store <span>125</span>
+          </li>
+          <li>
+            Restaurants, Bars, Cafes <span>125</span>
+          </li>
+          <li>
+            Beauty, Massage & Spa <span>125</span>
+          </li>
+          <li>
+            House & Garden <span>125</span>
+          </li>
+          <li>
+            Fitness & Sports <span>125</span>
+          </li>
+          <li>
+            Automotive <span>125</span>
           </li>
         </ul>
       </div>

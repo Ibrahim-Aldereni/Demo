@@ -8,7 +8,7 @@
 
 body {
   color: var(--sec-color) !important;
-  background-color: rgba(245, 245, 245, 0.904) !important;
+  background-color: #f4f7fb !important;
 }
 
 .app-container {
@@ -268,9 +268,11 @@ body {
   transition: all 0.3s ease;
   opacity: 0;
   background-color: rgb(0, 174, 255);
+  text-align: center;
 }
 
 .overlay p {
+  width: 80%;
   font-size: 20px;
   font-weight: bold;
   color: white;
@@ -411,14 +413,15 @@ body {
 
 .discover-list-container {
   background-color: white;
-  width: 19em;
-  height: 36em;
+  width: 20em;
+  min-height: 36em;
   overflow-y: auto;
 }
 
 .discover-list-container ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 #dl-firstChild {
@@ -430,25 +433,176 @@ body {
 }
 
 .discover-list-container ul li:not(:first-child) {
-  padding: 10px 20px;
+  padding: 11px 20px;
   border-bottom: 1px solid rgba(211, 211, 211, 0.2);
-  font-weight: 500;
 }
 
 .discover-list-container ul li span {
   float: right;
   font-size: 13px;
   color: rgb(161, 161, 161);
-  font-weight: normal;
+}
+
+.discover-list-container ul li:hover {
+  cursor: pointer;
+  color: var(--theme-color);
+}
+
+/******************** second section ***********************/
+.second-sec-container {
+  padding: 20px 20px !important;
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  height: 12%;
+}
+
+.second-sec-container input {
+  display: inline-block;
+  width: 28vw;
+  height: 43px;
+  vertical-align: middle;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/Envelope_font_awesome.svg")
+    no-repeat scroll 6px 8px;
+  background-size: 24px;
+  padding-left: 40px;
+}
+
+.second-sec-container p {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  color: var(--theme-color);
+  font-weight: bold;
+}
+
+.second-sec-container button {
+  background-color: var(--theme-color);
+  border: none;
+  color: white;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100px;
+  height: 43px;
+  box-shadow: 0 0 8px 0 rgb(1 178 238 / 50%);
+}
+.second-sec-container button:hover {
+  background-color: rgb(1, 178, 238, 0.75);
 }
 
 /***********************************************
 ******************* footer ********************
 ************************************************/
 .footer-container {
-  background: blue;
-  margin-top: 50px;
+  background: white;
+  margin-top: 30px;
+  border-top: 1px solid #eaf1f5;
 }
+
+.footer-main {
+  height: 80%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.footer-main .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.footer-main .container div:last-child {
+  flex-basis: 420px;
+}
+
+.footer-footer {
+  padding-top: 17px;
+  height: 20%;
+  text-align: center;
+  font-size: 17px;
+}
+
+.footer-footer a {
+  text-decoration: none;
+  color: var(--theme-color);
+  padding-right: 5px;
+}
+
+.footer-footer img {
+  padding-left: 15px;
+}
+
+.footer-ico-container {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 13px;
+}
+
+.footer-ico-container .footer-ico {
+  font-size: 2em;
+}
+
+.footer-main button {
+  background-color: var(--theme-color);
+  border: none;
+  color: white;
+  width: 180px;
+  box-shadow: 0 0 8px 0 rgb(1 178 238 / 50%);
+  border-radius: 5px;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer-main button:hover {
+  background-color: rgb(1, 178, 238, 0.75);
+}
+
+.footer-main p {
+  font-weight: 500;
+}
+
+.footer-main a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(136, 136, 136);
+  padding-bottom: 6px;
+}
+
+.footer-main a:hover {
+  color: var(--theme-color);
+}
+
+.footer-main form input {
+  display: inline-block;
+  width: 20vw;
+  height: 43px;
+  vertical-align: middle;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/Envelope_font_awesome.svg")
+    no-repeat scroll 6px 8px;
+  background-size: 24px;
+  padding-left: 40px;
+}
+
+.footer-main form button {
+  background-color: var(--theme-color);
+  border: none;
+  color: white;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100px;
+  height: 43px;
+  box-shadow: 0 0 8px 0 rgb(1 178 238 / 50%);
+}
+
 /***********************************************
 **************** media queries ******************
 ************************************************/
@@ -503,5 +657,35 @@ body {
 
   .discover-list-container {
     display: none;
+  }
+  .footer-container {
+    margin-bottom: 70px;
+  }
+  .footer-main .container div:last-child {
+    display: none;
+  }
+  .footer-main {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .second-sec-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .second-sec-container input {
+    width: 50vw;
+  }
+  .second-sec-container p {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .first-sec-container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
