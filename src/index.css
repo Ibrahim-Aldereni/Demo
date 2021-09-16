@@ -7,7 +7,8 @@
 }
 
 body {
-  color: var(--sec-color);
+  color: var(--sec-color) !important;
+  background-color: rgba(245, 245, 245, 0.904) !important;
 }
 
 .app-container {
@@ -201,6 +202,7 @@ body {
   height: 70px;
   padding-top: 7px;
   border-top: 1px solid rgba(179, 195, 211, 0.356);
+  z-index: 100000;
 }
 
 .nav3-container {
@@ -243,14 +245,212 @@ body {
 .hero-container p {
   color: var(--sec-color);
   font-size: 0.95rem;
+  margin: 30px 0;
+}
+
+/******************** card *****************/
+.card-img-container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+  opacity: 0;
+  background-color: rgb(0, 174, 255);
+}
+
+.overlay p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.card-img-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem 0 1rem !important;
+}
+
+.cardFooter {
+  padding: 0 13px 13px 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardFooter .cardFooter-bottomText {
+  text-align: right;
+}
+
+.cardFooter > span:first-child {
+  font-size: 14px;
+  color: rgba(128, 128, 128, 0.739);
+  align-self: flex-end;
+}
+
+.cardFooter .cardFooter-bottomText span:first-child {
+  font-size: 13px;
+  color: var(--theme-color);
+}
+
+.cardFooter .cardFooter-bottomText span:nth-child(3) {
+  font-size: 35px;
+  font-weight: 500;
+  color: var(--theme-color);
+  padding-left: 10px;
+  line-height: 32px;
+}
+
+.cardFooter .cardFooter-bottomText span:nth-child(2) {
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
+.card-title {
+  margin-bottom: 0.2rem !important;
+}
+
+.card-body .card-text {
+  color: var(--theme-color);
+  margin-bottom: 0;
+}
+
+.card-body .card-text2 {
+  color: rgba(128, 128, 128, 0.739);
+}
+
+.card .wish-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: rgba(211, 211, 211, 0.9);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.wish-ico {
+  font-size: 23px;
+}
+.wish-ico:hover {
+  cursor: grabbing;
+}
+
+/******************** collection card *****************/
+.coll-card-container > :not(:nth-last-child(-n + 2)) {
+  position: relative !important;
+  z-index: 5;
+  background: white;
+}
+.coll-card-level1 {
+  width: 96%;
+  position: absolute;
+  bottom: -8px;
+  border: 1px solid rgba(211, 211, 211, 0.712);
+  z-index: 2;
+  background-color: white;
+}
+
+.coll-card-level2 {
+  width: 93%;
+  position: absolute;
+  bottom: -15.5px;
+  border: 1px solid rgba(211, 211, 211, 0.712);
+  z-index: 1;
+  background-color: white;
+}
+
+.coll-card-container .card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  border-bottom: 0.1px solid lightgrey;
+  text-align: center;
+}
+
+.coll-card-btn {
+  display: inline-block;
+  margin: 1.8rem 0;
+  color: var(--theme-color);
+  padding: 7px 11px;
+  text-decoration: none;
+  border: 2px solid var(--theme-color);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.coll-card-btn:hover {
+  color: var(--theme-color);
+}
+
+/************** first section cards container and dicover list ***************/
+
+.first-sec-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.discover-list-container {
+  background-color: white;
+  width: 19em;
+  height: 36em;
+  overflow-y: auto;
+}
+
+.discover-list-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+#dl-firstChild {
+  color: var(--theme-color);
+  padding: 15px 20px;
+  font-size: 29px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.657);
+}
+
+.discover-list-container ul li:not(:first-child) {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.2);
+  font-weight: 500;
+}
+
+.discover-list-container ul li span {
+  float: right;
+  font-size: 13px;
+  color: rgb(161, 161, 161);
+  font-weight: normal;
 }
 
 /***********************************************
 ******************* footer ********************
 ************************************************/
-
+.footer-container {
+  background: blue;
+  margin-top: 50px;
+}
 /***********************************************
-******************* media queries ********************
+**************** media queries ******************
 ************************************************/
 
 @media all and (min-width: 992px) {
@@ -299,5 +499,9 @@ body {
 
   .nav-3 {
     display: block;
+  }
+
+  .discover-list-container {
+    display: none;
   }
 }
