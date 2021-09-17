@@ -11,6 +11,7 @@ import {
   escapes,
   activities,
   store,
+  automotive,
 } from "../Data";
 class Home extends Component {
   render() {
@@ -21,11 +22,11 @@ class Home extends Component {
           <DiscoverList />
           <Card
             title="Two New Zealand Beef Tenderloin..."
-            subtitle1=""
-            subtitle2=""
-            bought="77"
+            subtitle1="Duncan NZ Ltd"
+            subtitle2="Auckland"
+            bought="77 bought"
             price="$180"
-            oldPrice=""
+            oldPrice="$250"
             width="30rem"
             hoverText="Two Silver Fern Farms New Zealand Export-Quality Beef Tenderloin Eye Fillets (1.8 - 2.2kg per Slab)"
             img="https://main-cdn.grabone.co.nz/goimage/325x225/c1a3dbabdbba0721012652889951780c340c30bd.jpg"
@@ -65,6 +66,7 @@ class Home extends Component {
           data={activities}
         />
         <SectionCards header="Store" data={store} />
+        <SectionCards header="Automotive" data={automotive} />
       </main>
     );
   }

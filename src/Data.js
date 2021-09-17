@@ -210,3 +210,48 @@ export const store = [
     img: "https://main-cdn.grabone.co.nz/goimage/325x225/2f8924b769e6fdaa0ca68686cc1f05265cfb89a0.jpg",
   },
 ];
+
+export const automotive = [
+  {
+    title: "A5 Tyre Inflating Gun",
+    subtitle1: "TSB Living",
+    subtitle2: "",
+    bought: "",
+    price: "$13",
+    oldPrice: "",
+    hoverText: "A5 Tyre Inflating Gun",
+    img: "https://main-cdn.grabone.co.nz/goimage/495x343/fd247c2d24004ac69fad1c3ba3e8a3098a2fba93.jpg",
+  },
+  {
+    title: "Comprehensive Car Service",
+    subtitle1: "Bj WOF & Automotive Centre",
+    subtitle2: "East Tamaki",
+    bought: "10 bought",
+    price: "$22",
+    oldPrice: "",
+    hoverText:
+      "Comprehensive Car Service for a Japanese Vehicle - Option for European Vehicle",
+    img: "https://main-cdn.grabone.co.nz/goimage/495x343/f300e9d4fb2f3bd6e49450ec078f4780bb8dd59d.jpg",
+  },
+  {
+    title: "Brake Pads Replacement incl. Fitting",
+    subtitle1: "Tiverton Automotive",
+    subtitle2: "Avondale",
+    bought: "1 bought",
+    price: "$69",
+    oldPrice: "$122",
+    hoverText:
+      "Front OR Rear Brake Pads Replacement incl. Fitting - Option for Both Front & Rear",
+    img: "https://main-cdn.grabone.co.nz/goimage/325x225/4b98aebb1f7cd46d87254c48644974e7ab237405.jpg",
+  },
+  {
+    title: "67-Piece Emergency Car Tyre Repair..",
+    subtitle1: "",
+    subtitle2: "",
+    bought: "",
+    price: "$50",
+    oldPrice: "",
+    hoverText: "67-Piece Emergency Car Tyre Repair Kit",
+    img: "https://main-cdn.grabone.co.nz/goimage/325x225/dcb4b8e06e9591d0c9a023deb1aed4012e2e0475.jpg",
+  },
+];
