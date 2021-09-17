@@ -1,1 +1,1 @@
-![gif](.\img\gif.gif)
+![gif](./src/img/gif.gif)
