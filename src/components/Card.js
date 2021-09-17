@@ -19,7 +19,7 @@ class Card extends Component {
             <p className="card-text2">{props.subtitle2}</p>
           </div>
           <div className="cardFooter">
-            <span>{props.bought} bought</span>
+            <span>{props.bought}</span>
             <div className="cardFooter-bottomText">
               <span>
                 from <br />

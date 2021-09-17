@@ -30,17 +30,6 @@ class Nav extends Component {
                 ></path>
               </svg>
             </a>
-            {/* <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarText"
-              aria-controls="navbarText"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button> */}
             <div className="navbar-collapse2" id="navbarText">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -289,6 +278,7 @@ class Nav extends Component {
             </div>
           </div>
         </nav>
+        {/*********************************** nav 3 **********************************/}
         <nav className="nav-3">
           <div className="nav3-container container">
             <div>

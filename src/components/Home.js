@@ -3,6 +3,15 @@ import Hero from "./Hero";
 import Card from "./Card";
 import CollectionCard from "./CollectionCard";
 import DiscoverList from "./DiscoverList";
+import SectionCards from "./SectionCards";
+import SectionCollectionCards from "./SectionCollectionCards";
+import {
+  featuredDeals,
+  collections,
+  escapes,
+  activities,
+  store,
+} from "../Data";
 class Home extends Component {
   render() {
     return (
@@ -48,6 +57,14 @@ class Home extends Component {
             </button>
           </form>
         </section>
+        <SectionCards header="Featured Auckland deals" data={featuredDeals} />
+        <SectionCollectionCards header="Collections" data={collections} />
+        <SectionCards header="Escapes" data={escapes} />
+        <SectionCards
+          header="Activities, Events & Outdoors"
+          data={activities}
+        />
+        <SectionCards header="Store" data={store} />
       </main>
     );
   }

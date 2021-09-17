@@ -119,6 +119,7 @@ body {
 }
 
 .nav-2 {
+  background-color: white;
   height: 50%;
   box-shadow: 0 0 10px 0 rgb(75 84 96 / 22%);
 }
@@ -224,6 +225,9 @@ body {
 /***********************************************
 ******************** home *********************
 ************************************************/
+.home-container {
+  /* margin-bottom: 90px; */
+}
 
 /*********** hero img **************/
 
@@ -271,15 +275,17 @@ body {
   text-align: center;
 }
 
-.overlay p {
+.overlay > p {
   width: 80%;
-  font-size: 20px;
+  max-height: 70%;
+  font-size: 17px;
   font-weight: bold;
   color: white;
+  overflow: hidden;
 }
 
 .card-img-container:hover .overlay {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .card-body {
@@ -312,8 +318,8 @@ body {
 .cardFooter .cardFooter-bottomText span:nth-child(3) {
   font-size: 35px;
   font-weight: 500;
-  color: var(--theme-color);
   padding-left: 10px;
+  color: var(--theme-color);
   line-height: 32px;
 }
 
@@ -450,13 +456,12 @@ body {
 
 /******************** second section ***********************/
 .second-sec-container {
-  padding: 20px 20px !important;
+  padding: 40px 20px !important;
   margin: 30px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: white;
-  height: 12%;
 }
 
 .second-sec-container input {
@@ -493,6 +498,47 @@ body {
 }
 .second-sec-container button:hover {
   background-color: rgb(1, 178, 238, 0.75);
+}
+
+/********************* cards section ******************************/
+.cards-section-container {
+  margin: 30px 0;
+}
+
+.cards-section-container > span {
+  font-size: 36px;
+  font-weight: 500;
+  padding: 0 14px;
+}
+
+.cards-section-container > span:hover {
+  cursor: pointer;
+  color: var(--theme-color);
+}
+
+.cards-section-container > a {
+  padding: 7px 10px;
+  text-decoration: none;
+  background-color: var(--theme-color);
+  border: none;
+  color: white;
+  width: 100px;
+  height: 43px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.cards-section-container a:hover {
+  color: white;
+  background-color: rgb(1, 178, 238, 0.75);
+}
+
+.cards-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0;
 }
 
 /***********************************************
@@ -580,7 +626,7 @@ body {
 
 .footer-main form input {
   display: inline-block;
-  width: 20vw;
+  width: 20rem;
   height: 43px;
   vertical-align: middle;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -666,6 +712,9 @@ body {
   }
   .footer-main {
     height: 100%;
+  }
+  .cards-section-container {
+    text-align: center;
   }
 }
 
