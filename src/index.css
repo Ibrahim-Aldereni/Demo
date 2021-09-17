@@ -237,7 +237,7 @@ body {
 }
 
 .hero-img {
-  height: 26vh;
+  height: auto;
   margin: 15px 0;
 }
 
